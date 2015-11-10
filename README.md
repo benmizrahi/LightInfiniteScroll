@@ -8,6 +8,11 @@ ________________________________________________________________________________
 
 Implemention Exemple :
 ----------------------
+
+
+
+
+
 Services
 ---------------
 module InfiniteExample.Services {
@@ -53,9 +58,11 @@ module InfiniteExample.Controllers {
     }
 }
 
+
+
 Module
 ---------------
-module InfiniteExample{
+module InfiniteExample {
     var appModule = angular.module("InfiniteExample", []).
     service("DataFactory",MyApp.Services.DataFactory).
     controller("HomeController", InfiniteExample.Controllers.HomeController).
