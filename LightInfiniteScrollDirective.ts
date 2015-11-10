@@ -2,7 +2,7 @@
 
     export class LightInfiniteScroll implements ng.IDirective {
 
-        constructor(private DataProvider: KeshetAnan.Interfaces.IScrollService) {
+        constructor(private DataProvider: Global.Interfaces.IScrollService) {
         }
 
         restrict = 'A';
@@ -21,7 +21,7 @@
         };
 
          static factory(dataServiceNamne) {
-             var directive = (DataProvider: KeshetAnan.Interfaces.IScrollService) => new LightInfiniteScroll(DataProvider);
+             var directive = (DataProvider: Global.Interfaces.IScrollService) => new LightInfiniteScroll(DataProvider);
              directive.$inject = [dataServiceNamne];
             return directive;
         }
