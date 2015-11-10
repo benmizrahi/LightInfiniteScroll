@@ -1,7 +1,4 @@
-﻿ /// <reference path="../../scripts/typings/angularjs/angular.d.ts" />
-/// <reference path="../globalobjects/interfaces/isrollservice.ts" />
-
-module Global.Directives {
+﻿module Global.Directives {
 
     export class LightInfiniteScroll implements ng.IDirective {
 
