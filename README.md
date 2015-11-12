@@ -7,12 +7,9 @@ NOTE: you should add AngularJS Typescript signature --> angular.d.ts
 ______________________________________________________________________________________________
 
 #Implemention Exemple :
-----------------------
 
+####Services
 
-
-##Services
----------------
 module InfiniteExample.Services {
     /* Service - Get data from server  */
     class DataProvider : Global.Interfaces.IScrollService
@@ -59,7 +56,7 @@ module InfiniteExample.Controllers {
 
 
 ####Module
----------------
+
 module InfiniteExample {
     var appModule = angular.module("InfiniteExample", []).
     service("DataFactory",MyApp.Services.DataFactory).
@@ -69,7 +66,7 @@ module InfiniteExample {
 
 
 ####View :
--------------
+
 <html ng-app="InfiniteExample">
     <head>....</head>
     <body ng-controller="HomeController">
