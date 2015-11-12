@@ -6,10 +6,8 @@ This directive implement infiniteScroll with Typescript + AngularJs = quick and 
 NOTE: you should add AngularJS Typescript signature --> angular.d.ts
 ______________________________________________________________________________________________
 
-##Implemention Exemple :
+#Implemention Exemple :
 ----------------------
-
-
 
 
 
@@ -39,8 +37,8 @@ module InfiniteExample.Services {
 }
 
 
-##Controller
----------------
+#### Controller:
+
 module InfiniteExample.Controllers {
     class HomeController
     {
@@ -60,7 +58,7 @@ module InfiniteExample.Controllers {
 
 
 
-##Module
+####Module
 ---------------
 module InfiniteExample {
     var appModule = angular.module("InfiniteExample", []).
@@ -70,7 +68,7 @@ module InfiniteExample {
 }
 
 
-##View :
+####View :
 -------------
 <html ng-app="InfiniteExample">
     <head>....</head>
