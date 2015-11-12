@@ -10,7 +10,7 @@ ________________________________________________________________________________
 
 ####Services
 
-module InfiniteExample.Services {
+`module InfiniteExample.Services {
     /* Service - Get data from server  */
     class DataProvider : Global.Interfaces.IScrollService
     {
@@ -31,12 +31,12 @@ module InfiniteExample.Services {
             set NoMoreDetails when data is done
       }
     }
-}
+}`
 
 
 #### Controller:
 
-module InfiniteExample.Controllers {
+`module InfiniteExample.Controllers {
     class HomeController
     {
       
@@ -51,23 +51,23 @@ module InfiniteExample.Controllers {
             $scope.DataProvider = DataProvider;
       }
     }
-}
+}`
 
 
 
 ####Module
 
-module InfiniteExample {
+`module InfiniteExample {
     var appModule = angular.module("InfiniteExample", []).
     service("DataFactory",MyApp.Services.DataFactory).
     controller("HomeController", InfiniteExample.Controllers.HomeController).
     directive("lightInfiniteScroll", () => new Global.Directives.LightInfiniteScroll.factory('DataFactory'));
-}
+}`
 
 
 ####View :
 
-<html ng-app="InfiniteExample">
+`<html ng-app="InfiniteExample">
     <head>....</head>
     <body ng-controller="HomeController">
         <div class="scoller" style="overflow-y: scroll;"  light-infinite-scroll>
@@ -76,4 +76,4 @@ module InfiniteExample {
                 </div>
         </div>
     </body>
-</html>
+</html>`
